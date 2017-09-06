@@ -1,97 +1,77 @@
 #!/usr/bin/python3
-from subprocess import Popen, PIPE
-import os, time, sys
+import os, argparse
+from subprocess import Popen, PIPE, STDOUT
 from queue import Queue, Empty
 from threading import Thread
+from gcomparator import GComparator
+import time
 
-application_name = sys.argv[1] #"gurgen_6"
-test_value = sys.argv[2]
-print("GURGEN TEST %s. Test value = %s" % (application_name, test_value))
+class TestRunner:
+  def __init__(self, application_path):
+    self.proc = Popen([application_path], stdin = PIPE, stdout = PIPE, stderr = STDOUT, 
+             bufsize=1, close_fds=True)
 
-cur_dir = os.getcwd()
-#out_log = open(os.path.join(cur_dir, "out.txt"), 'w+')
-err_log = open(os.path.join(cur_dir, "err.txt"), 'w+')
+  def __del__(self):
+    self.proc.kill()
 
-proc = Popen([os.path.join(cur_dir, application_name)],\
-    stdin = PIPE, stdout = PIPE, stderr = err_log, bufsize=1, close_fds=True)
+  def _get_result(self, q, need_wait = True):
+    while True:
+      try:
+        line = q.get_nowait()
+      except Empty:
+        #print('no output yet')
+        if not need_wait:
+          return b''
+      else:
+        #print('in else get_result = ' + line.decode())
+        break
+    return line
 
-proc.stdin.write(b'%s\n' % test_value.encode())
-proc.stdin.flush()
+  def _enqueue_output(self, out, q):
+    for line in iter(out.readline, b''):
+      print("gurgen_output=" + line.decode().replace('\n', ''))
+      q.put(line)
+    out.close()
 
-def enqueue_output(out, queue):
-  for line in iter(out.readline, b''):
-    #print("enqueue_output=" + line.decode())
-    queue.put(line)
-  out.close()
+  def run_test(self, test_data):
+    # send test data to tested application
+    self.proc.stdin.write(b'%s\n' % test_data.encode())
+    self.proc.stdin.flush()
+    #time.sleep(2)
+    # create thread and queue to gather stdout from tested application
+    q = Queue()
+    t = Thread(target=self._enqueue_output, args=(self.proc.stdout, q))
+    t.daemon = True
+    t.start()
 
-q = Queue()
-t = Thread(target=enqueue_output, args=(proc.stdout, q))
-t.daemon = True
-t.start()
+    # gather data from queue
 
-def get_result(que, need_wait = True):
-  while True:
-    try:
-      line = que.get_nowait()
-    except Empty:
-      #print('no output yet')
-      if not need_wait:
-        return b''
-    else:
-      #print('in else get_result = ' + line.decode())
-      break
-  return line
+    # number of attemps to get data from queue = number of test cases * 3
+    attempts = ((test_data.count('\n') + 1) * 3)
+    welcomeLinesCount = 1
+    tested_app_stdout = b''
+    #print('attempts = ', attempts)
 
-attempts = 5
-welcomeLinesCount = 1
-
-test_result = b''
-
-for i in range(attempts):
-  need_wait_stdin = i < welcomeLinesCount and True or False
-  test_result += get_result(q, need_wait_stdin)
+    for i in range(attempts):
+      need_wait_stdin = i < welcomeLinesCount and True or False
+      tested_app_stdout += self._get_result(q, need_wait_stdin)
   
-print('STDOUT=', test_result)
-proc.kill()
+    comprtr = GComparator(tested_app_stdout.decode())
+    comprtr.compare()
 
-def preproceess_data(result_line):
-  lines = result_line.split('\n') 
-  has_gurgen = False
-  score = None
-  dices = []
-  for line in lines:
-    if 'Welcome to' in line:
-      continue
-    if 'GURGEN!' in line:
-      has_gurgen = True
-      continue
-    if 'score' in line:
-      score = int(line[line.index(':')+1 : ]) #ValueError
-    if 'dices' in line:
-      dices = [int(dice) for dice in line[line.rindex(':')+1 : ].split(' ') if dice]
-    # Invalid unknown string
-  return score, has_gurgen, dices
+#----------------------------------
+parser = argparse.ArgumentParser(description='Run set of tests of GURGEN application.', prefix_chars = "/")
+parser.add_argument('gurgen_path', help='absolute path to application to test', action = 'store')
+parser.add_argument('test_data', help='integer numbers for application testing, splitted by "\\n" character',
+                    action = 'store')
 
-score, has_gurgen, dices = preproceess_data(test_result.decode())
-print('Score =', score, ', Has GURGEN =', has_gurgen, ', Dices =', dices)
-
-def calculate_score_and_gurgen(dices):
-  total = 0
-  has_gurgen = False
-  if dices == [1, 2, 3, 4, 5]:
-    total = 150
-  else:  
-    for dice in dices:
-      if dice == 1: total += 10
-      if dice == 5: total += 5
-    if not total: has_gurgen = True
-  return total, has_gurgen
-
-
-etalon_score, etalon_gurgen = calculate_score_and_gurgen(dices)
-print('Etalon Score =', etalon_score, ', Etalon Has GURGEN =', etalon_gurgen)
-
-if score == etalon_score and has_gurgen == etalon_gurgen:
-  print('TEST OK')
-else:
-  print('TEST FAIL')
+if __name__ == "__main__":
+  args = parser.parse_args()
+  application_path = args.gurgen_path.replace('%', '') #"/home/kar/.../gurgen_6"
+  test_value = args.test_data #'1\n2\n3\n4\n5'
+  print('----------------------------------')
+  print("GURGEN TEST %s. Test value = %s" % (application_path, test_value))
+  print('----------------------------------')
+  test_value = test_value.replace("\\n", '\n')
+  runner = TestRunner(application_path)
+  runner.run_test(test_value)
