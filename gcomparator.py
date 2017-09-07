@@ -31,17 +31,19 @@ class GComparator:
     return score, has_gurgen, dices
 
   def _calculate_etalon(self, dices):
+    sorted_dices = list(dices)
+    sorted_dices.sort()
     etalon_has_gurgen = False
     etalon_score = 0
-    if dices == self.special_case['result']:
+    if sorted_dices == self.special_case['result']:
       etalon_score = self.special_case['score']
     else:
       tmp_has_gurgen = True
-      for dice in dices:
+      for dice in sorted_dices:
         if dice in self.scores_table.keys(): 
           etalon_score += self.scores_table[dice]
           tmp_has_gurgen = False
-      if len(dices) != 0: etalon_has_gurgen = tmp_has_gurgen
+      if len(sorted_dices) != 0: etalon_has_gurgen = tmp_has_gurgen
 
     if etalon_score == 0:
       etalon_score = None
