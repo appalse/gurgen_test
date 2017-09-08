@@ -4,17 +4,22 @@ class GComparator:
   special_case = {'result' : [1, 2, 3, 4, 5], 'score' : 150}
   scores_table = { 1 : 10, 5 : 5}
 
-  def __init__(self, tests_output):
-    self.test_cases_stdout = []
-    self._split_tests_output(tests_output)
-    #print('STDOUT =', tests_output)
-    #print(self.test_cases_stdout)
+  def __init__(self, test_case_stdout, test_idx = 0):
+    self.test_output = self._preprocess_test_output(test_case_stdout)
+    self.test_index = test_idx
+    #print('STDOUT =', test_output)
+    #print(self.test_output test_case_stdout)
 
-  def _split_tests_output(self, tests_output):
-    for test_output in tests_output.split(self.test_case_splitter):
-      if 'Welcome to' in test_output or not test_output or test_output == '\n':
+  def _preprocess_test_output(self, test_case_stdout):
+    test_case_stdout_lines = []
+    for line in test_case_stdout.split(self.test_case_splitter):
+      if 'Welcome to' in line or not line or line == '\n':
         continue
-      self.test_cases_stdout.append(test_output)
+      test_case_stdout_lines.append(line)
+    if len(test_case_stdout_lines) != 1:
+      raise exception("Invalid stdout: should contain only 1 result of 1 test \
+(text begining from 'Number of dices:' before the next 'Number of dices:')")
+    return test_case_stdout_lines[0]
 
   def _preprocess(self, test_case_stdout):
     lines = test_case_stdout.split('\n') 
@@ -60,25 +65,24 @@ class GComparator:
       print(error_message)
 
   def compare(self):
-    for idx, test_case_stdout in enumerate(self.test_cases_stdout):
-      test_name = 'TEST #%i' % idx
-      score, has_gurgen, dices = self._preprocess(test_case_stdout)
-      #print('Score =', score, ', Has GURGEN =', has_gurgen, ', Dices =', dices)
-      etalon_score, etalon_gurgen = self._calculate_etalon(dices)
-      #print('Etalon Score =', etalon_score, ', Etalon Has GURGEN =', etalon_gurgen)
+    test_name = 'TEST #%i' % self.test_index
+    score, has_gurgen, dices = self._preprocess(self.test_output)
+    #print('Score =', score, ', Has GURGEN =', has_gurgen, ', Dices =', dices)
+    etalon_score, etalon_gurgen = self._calculate_etalon(dices)
+    #print('Etalon Score =', etalon_score, ', Etalon Has GURGEN =', etalon_gurgen)
 
-      self._check( score == etalon_score, 
-        '%s FAIL\n  %s\n  %s' % (test_name, self._get_dices_str(dices), 
-        self._get_message('score', score, etalon_score)))
-      self._check( has_gurgen == etalon_gurgen,
-        '%s FAIL\n  %s\n  %s' % (test_name, self._get_dices_str(dices), 
-        self._get_message('gurgen', has_gurgen, etalon_gurgen)))
+    self._check( score == etalon_score, 
+      '%s FAIL - score\n  %s\n  %s' % (test_name, self._get_dices_str(dices), 
+      self._get_message('score', score, etalon_score)))
+    self._check( has_gurgen == etalon_gurgen,
+      '%s FAIL - gurgen\n  %s\n  %s' % (test_name, self._get_dices_str(dices), 
+      self._get_message('gurgen', has_gurgen, etalon_gurgen)))
 
-      if score == etalon_score and has_gurgen == etalon_gurgen:
-        print('%s OK\n  %s' % (test_name, self._get_dices_str(dices)))
+    #if score == etalon_score and has_gurgen == etalon_gurgen:
+    #  print('%s OK\n  %s' % (test_name, self._get_dices_str(dices)))
 
 
 if __name__ == "__main__":
-  comprtr = GComparator('Welcome to GURGEN world!\nNumber of dices:dices: 3 \nGURGEN!\nNumber of dices:dices: 4 4 \nGURGEN!\nNumber of dices:dices: 2 2 5 \nscore: 5\nNumber of dices:dices: 6 4 2 5 \nscore: 5\nNumber of dices:dices: 2 5 2 5 5 \nscore: 15\nNumber of dices:\n')
+  comprtr = GComparator('Welcome to GURGEN world!\nNumber of dices:dices: 3 \nGURGEN!', 1)
   comprtr.compare()
   
