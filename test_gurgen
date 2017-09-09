@@ -1,0 +1,7 @@
+./runner.py "%/home/kar/Documents/VisionLabs/QA/gurgen_0%" 10000
+./runner.py "%/home/kar/Documents/VisionLabs/QA/gurgen_1%" 10000
+./runner.py "%/home/kar/Documents/VisionLabs/QA/gurgen_2%" 10000
+./runner.py "%/home/kar/Documents/VisionLabs/QA/gurgen_3%" 10000
+./runner.py "%/home/kar/Documents/VisionLabs/QA/gurgen_4%" 10000
+./runner.py "%/home/kar/Documents/VisionLabs/QA/gurgen_5%" 10000
+./runner.py "%/home/kar/Documents/VisionLabs/QA/gurgen_6%" 10000
