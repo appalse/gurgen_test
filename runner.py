@@ -1,106 +1,98 @@
 #!/usr/bin/python3
-import os, sys, argparse
-from subprocess import Popen, PIPE, STDOUT
+import os
+from subprocess import Popen, PIPE
 from queue import Queue, Empty
 from threading import Thread
-from gcomparator import GComparator
 import time
 
+from gcomparator import GComparator
+
 class TestRunner:
-  def __init__(self, application_path):
-    self.proc = Popen([application_path], stdin = PIPE, stdout = PIPE, stderr = STDOUT, 
-             bufsize=1, close_fds=True)
+  """Run tested aplication, listen to testd app., test with valid and invalid data"""
+
+  # max time to wait for response from tested applicatino
+  # because in some cases tested application has no stdout data 
+  #   and we are waiting for it on blocking 'readline' method
+  max_timeout_in_sec = 5 
+
+  def __init__(self, application_path, log):
+    """start tested application and create queue for stdout exchange"""
+    self.testlog = log
+    self.proc = Popen([application_path], stdin = PIPE, stdout = PIPE, 
+             stderr = PIPE, bufsize=1, close_fds=True)
     self.q = Queue()
     self.version_name = os.path.basename(application_path)
 
   def __del__(self):
+    """kill process with tested application"""
     self.proc.kill()
 
-  def _get_result(self, q, need_wait = True):
-    while True:
-      try:
-        line = q.get_nowait()
-      except Empty:
-        #print('no output yet')
-        if not need_wait:
-          return b''
-      else:
-        #print('in else get_result = ' + line.decode())
-        break
-    return line
-
-  def _enqueue_output(self, out, q):
-    #TODO better to use signals instead of blocking 'readline'
-    for line in iter(out.readline, b''):
-      #print("gurgen_output=" + line.decode().replace('\n', ''))
-      q.put(line)
-    out.close()
-
-  def write_data(self, test_data):
-    # send test data to tested application
-    self.proc.stdin.write(b'%s\n' % test_data.encode())
-    self.proc.stdin.flush()
-    #time.sleep(2)
-
   def start_listening_output(self):
-    # create thread and queue to gather stdout from tested application
+    """ create thread to listen stdout from tested application and send it to queue"""
     t = Thread(target=self._enqueue_output, args=(self.proc.stdout, self.q))
     t.daemon = True
     t.start()
 
-  def read_data(self, test_data):
-    # gather data from queue
-    # number of attemps to get data from queue = number of test cases * 4
-    attempts = ((test_data.count('\n') + 3) * 4)
-    welcomeLinesCount = 2
-    tested_app_stdout = b''
-    #print('attempts = ', attempts)
-    for i in range(attempts):
-      need_wait_stdin = i < welcomeLinesCount and True or False
-      #print(need_wait_stdin)
-      tested_app_stdout += self._get_result(self.q, need_wait_stdin)
-    return tested_app_stdout
+  def _enqueue_output(self, std_out, q):
+    """put text from tested application into queue. Blocking readline method is used"""
+    # It's better to use signals instead of blocking 'readline' but we cannot because:
+    #  - tested application never terminates. We cannot use Popen.communicate. 
+    #  - 'select' module in python may be a solution. But it is not fully supported on different OS
+    #  - tested application could have no output or several output lines - difficult to capture results
+    #  Most reliable way is reading via 'readline' in separate thread and passing to queue.
+    for line in iter(std_out.readline, b''):
+      self.testlog.write_info("gurgen_output=" + line.decode().replace('\n', ''))
+      q.put(line)
+    std_out.close()
 
   def test_valid_cases(self, test_values_list):
-    for test_idx, test_input in enumerate(test_values_list):
-      #print('-------------------------------' + test_input)
-      self.write_data(test_input)
-      output_result = self.read_data(test_input)
-      comprtr = GComparator(test_input, output_result.decode(), test_idx, self.version_name)
-      score, dices = comprtr.compare_valid_data()
-      comprtr.check_for_dices_values(dices, int(test_input))
+    """run tests with valid data and compare result to calculated etalon"""
+    self.run(test_values_list, self._valid_data_checker)
 
   def test_invalid_cases(self, invalid_test_values_list, etalon_message):
-    for test_idx, test_input in enumerate(invalid_test_values_list):
-      self.write_data(test_input)
-      output_result = self.read_data(test_input)
-      comprtr = GComparator(test_input, output_result.decode(), test_idx, self.version_name)
-      comprtr.compare_invalid_data(etalon_message)
+    """run tests with invalid data and compare result to etalon error message"""
+    self.run(invalid_test_values_list, self._invalid_data_checker, etalon_message)
 
-#----------------------------------
-parser = argparse.ArgumentParser(description='Run set of tests of GURGEN application.', prefix_chars = "/")
-parser.add_argument('gurgen_path', help='absolute path to application to test', action = 'store')
-parser.add_argument('test_cases_count', help='number of test cases that will generate test inputs (from 0 to intmax)',
-                    action = 'store')
+  def run(self, test_values_list, test_checker, etalon_message=''):
+    """run tests in loop for every test value (test case).
+       write to tested application stdin and read from its stdout"""
+    for test_idx, test_input in enumerate(test_values_list):
+      # write 1 line to stdin of tested application
+      self._write_data_to_stdin(test_input)
 
-if __name__ == "__main__":
-  args = parser.parse_args()
-  application_path = args.gurgen_path.replace('%', '') #"/home/kar/.../gurgen_6"
-  test_cases_count = args.test_cases_count #'5'
-  import random
-  test_values_list = []
-  for i in range(int(test_cases_count)):
-    test_values_list.append(str(random.randint(1, 5)))
-  print('----------------------------------')
-  print("GURGEN TEST %s" % application_path)
-  #print('Test values = ', test_values_list)
-  print('----------------------------------')
-  runner = TestRunner(application_path)
-  runner.start_listening_output()
-  # Valid input test
-  runner.test_valid_cases(test_values_list)
-  # Invalid input test
-  invalid_dices_count_list = [str(s) for s in [-2147483648, -1, 0, 6, 2147483647]]
-  runner.test_invalid_cases(invalid_dices_count_list, "\nnumber of dices error\n")
-  invalid_input = [str(s) for s in [-sys.maxsize, -2147483649, 2147483648, sys.maxsize, 'A', 'z', '!', '@', '#', '$', '%', '^', '&', '*', '(', ')[]', '-+=', ':', ';', '/', '\\' ]]
-  runner.test_invalid_cases(invalid_input, "\ninput error\n")
+      # wait while tested application starts response and sending text lines
+      start_time = time.time()
+      while self.q.empty() and ( time.time() - start_time < self.max_timeout_in_sec ):
+        self.testlog.write_info('run: no stdout yet')
+        time.sleep(0.5)
+      # if there is no response from tested app. during <max_timeout_in_sec>
+      #   it is error - write it in error log and go to the next test value (test case) 
+      if self.q.empty() and ( time.time() - start_time > self.max_timeout_in_sec ):
+        self.testlog.write_error(self.version_name + ';TEST #' + str(test_idx) + 
+          ' FAIL;;tested input = ' + test_input + ';ERROR - NO STDOUT;Stopped by timeuot;')
+        continue
+      # wait for tested application, while it finish writing to stdout 
+      time.sleep(0.2)
+      # read all stdout text lines from tested application
+      output_result = b''
+      while not self.q.empty():
+        output_result += self.q.get()
+
+      # Compare test case results with etalon
+      comprtr = GComparator(test_input, output_result.decode(), test_idx, self.version_name, self.testlog)
+      test_checker(comprtr, etalon_message)
+
+  def _valid_data_checker(self, comprtr, msg=''):
+    """steps to check whether generated test output is correct (with valid data)"""
+    score, dices = comprtr.compare_valid_data()
+    comprtr.check_for_dices_values(dices)
+
+  def _invalid_data_checker(self, comprtr, etalon_message):
+    """steps to check whether generated test output is correct (with invalid data)"""
+    comprtr.compare_invalid_data(etalon_message)
+
+  def _write_data_to_stdin(self, test_data):
+    """ send test data to tested application via stdin"""
+    self.proc.stdin.write(b'%s\n' % test_data.encode())
+    self.proc.stdin.flush()
+

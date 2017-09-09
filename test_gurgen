@@ -1,7 +1,7 @@
-./runner.py "%/home/kar/Documents/VisionLabs/QA/gurgen_0%" 10000
-./runner.py "%/home/kar/Documents/VisionLabs/QA/gurgen_1%" 10000
-./runner.py "%/home/kar/Documents/VisionLabs/QA/gurgen_2%" 10000
-./runner.py "%/home/kar/Documents/VisionLabs/QA/gurgen_3%" 10000
-./runner.py "%/home/kar/Documents/VisionLabs/QA/gurgen_4%" 10000
-./runner.py "%/home/kar/Documents/VisionLabs/QA/gurgen_5%" 10000
-./runner.py "%/home/kar/Documents/VisionLabs/QA/gurgen_6%" 10000
+./main.py "%/home/kar/Documents/VisionLabs/QA/gurgen_0%" 10 "info_0.txt" "errors_0.txt"
+./main.py "%/home/kar/Documents/VisionLabs/QA/gurgen_1%" 10 "info_1.txt" "errors_1.txt"
+./main.py "%/home/kar/Documents/VisionLabs/QA/gurgen_2%" 10 "info_2.txt" "errors_2.txt"
+./main.py "%/home/kar/Documents/VisionLabs/QA/gurgen_3%" 10 "info_3.txt" "errors_3.txt"
+./main.py "%/home/kar/Documents/VisionLabs/QA/gurgen_4%" 10 "info_4.txt" "errors_4.txt"
+./main.py "%/home/kar/Documents/VisionLabs/QA/gurgen_5%" 10 "info_5.txt" "errors_5.txt"
+./main.py "%/home/kar/Documents/VisionLabs/QA/gurgen_6%" 10 "info_6.txt" "errors_6.txt"

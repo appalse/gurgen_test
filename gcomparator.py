@@ -1,14 +1,17 @@
 
 class GComparator:
+  """Compare valid and invalid data with calculated etalon or etalon message"""
   test_case_splitter = 'Number of dices:'
   special_case = {'result' : [1, 2, 3, 4, 5], 'score' : 150}
   scores_table = { 1 : 10, 5 : 5}
 
-  def __init__(self, test_input, test_case_stdout, test_idx = 0, version_name = ''):
+  def __init__(self, test_input, test_case_stdout, test_idx, version_name, log):
+    self.testlog = log
+    self.test_input = test_input
     self.test_name = 'TEST #%i' % test_idx
     self.version = version_name
     self.test_output = self._preprocess_test_output(test_case_stdout)
-    #print(self.test_output)
+    #self.testlog.write_info(self.test_output)
 
   def _preprocess_test_output(self, test_case_stdout):
     test_case_stdout_lines = []
@@ -66,17 +69,16 @@ class GComparator:
 
   def _check(self, ok_condition, error_message):
     if not ok_condition:
-      print(error_message)
-      #with open("errors.txt", 'a') as f:
-      #  f.write(self.version + ';' + 
-      #    error_message.replace('\n', ';').replace(' - ', ';').replace('  ', '') + ';STDOUT=' + 
-      #    self.test_output.replace('\n', '   ') + '\n')
+      self.testlog.write_info(error_message)
+      self.testlog.write_error(self.version + ';' + 
+          error_message.replace('\n', ';').replace(' - ', ';').replace('  ', '') + ';STDOUT=' + 
+          self.test_output.replace('\n', '   '))
 
   def compare_valid_data(self):    
     score, has_gurgen, dices = self._preprocess(self.test_output)
-    #print('Score =', score, ', Has GURGEN =', has_gurgen, ', Dices =', dices)
+    #self.testlog.write_info('Score =', score, ', Has GURGEN =', has_gurgen, ', Dices =', dices)
     etalon_score, etalon_gurgen = self._calculate_etalon(dices)
-    #print('Etalon Score =', etalon_score, ', Etalon Has GURGEN =', etalon_gurgen)
+    #self.testlog.write_info('Etalon Score =', etalon_score, ', Etalon Has GURGEN =', etalon_gurgen)
 
     self._check( score == etalon_score, 
       '%s FAIL - score\n  %s\n  %s' % (self.test_name, self._get_dices_str(dices), 
@@ -86,7 +88,7 @@ class GComparator:
       self._get_message('gurgen', has_gurgen, etalon_gurgen)))
 
     if score == etalon_score and has_gurgen == etalon_gurgen:
-      print('%s OK\n  %s' % (self.test_name, self._get_dices_str(dices)))
+      self.testlog.write_info('%s OK\n  %s' % (self.test_name, self._get_dices_str(dices)))
     return score, dices
 
   def compare_invalid_data(self, etalon_message):
@@ -94,7 +96,8 @@ class GComparator:
       '%s FAIL - invalid output message\n  %s' % (self.test_name, 
       self._get_message('invalid output', self.test_output, etalon_message)))
 
-  def check_for_dices_values(self, dices, input_dices_count):
+  def check_for_dices_values(self, dices):
+    input_dices_count = int(self.test_input)
     self._check( input_dices_count == len(dices), 
       '%s FAIL - dices count\n  %s\n  %s' % (self.test_name, self._get_dices_str(dices), 
       self._get_message('invalid dices count', len(dices), input_dices_count)))
@@ -104,8 +107,8 @@ class GComparator:
       self._get_message('invalid dice', dice, '[1 or 2 or 3 or 4 or 5 or 6]')))
 
 
-if __name__ == "__main__":
-  comprtr = GComparator('Welcome to GURGEN world!\nNumber of dices:dices: 3 \nGURGEN!', 1)
-  score, dices = comprtr.compare_valid_data()
-  comprtr.check_for_dices_values(dices)
+#if __name__ == "__main__":
+  #comprtr = GComparator('Welcome to GURGEN world!\nNumber of dices:dices: 3 \nGURGEN!', 1)
+  #score, dices = comprtr.compare_valid_data()
+  #comprtr.check_for_dices_values(dices)
   
