@@ -1,0 +1,6 @@
+git remote -v
+git status
+sudo git add git_commit
+sudo git commit -m "Add commit file"
+sudo git push -u origin2 master
+git status
