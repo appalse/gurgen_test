@@ -1,0 +1,306 @@
+gurgen_3;TEST #107 FAIL;dices;tested dices = [4, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 4    GURGEN!   
+gurgen_3;TEST #116 FAIL;dices;tested dices = [1, 2, 6, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 2 6 1    score: 10   
+gurgen_3;TEST #129 FAIL;dices;tested dices = [1, 1, 1, 2, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 1 1 1 2    score: 30   
+gurgen_3;TEST #174 FAIL;dices;tested dices = [2, 4, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 4 2    GURGEN!   
+gurgen_3;TEST #201 FAIL;dices;tested dices = [7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7    GURGEN!   
+gurgen_3;TEST #255 FAIL;dices;tested dices = [7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7    GURGEN!   
+gurgen_3;TEST #298 FAIL;dices;tested dices = [1, 2, 3, 5, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 1 3 2 5    score: 15   
+gurgen_3;TEST #314 FAIL;dices;tested dices = [3, 3, 6, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 3 6 3    GURGEN!   
+gurgen_3;TEST #326 FAIL;dices;tested dices = [1, 2, 2, 5, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 1 2 5 2    score: 15   
+gurgen_3;TEST #410 FAIL;dices;tested dices = [1, 1, 4, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 1 1 4    score: 20   
+gurgen_3;TEST #422 FAIL;dices;tested dices = [1, 1, 1, 4, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 1 1 4 1    score: 30   
+gurgen_3;TEST #423 FAIL;dices;tested dices = [5, 6, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 5 6    score: 5   
+gurgen_3;TEST #429 FAIL;dices;tested dices = [1, 2, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 1 2    score: 10   
+gurgen_3;TEST #508 FAIL;dices;tested dices = [1, 6, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 1 6    score: 10   
+gurgen_3;TEST #509 FAIL;dices;tested dices = [2, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 2    GURGEN!   
+gurgen_3;TEST #548 FAIL;dices;tested dices = [2, 3, 4, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 4 2 3    GURGEN!   
+gurgen_3;TEST #553 FAIL;dices;tested dices = [4, 5, 6, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 5 6 4    score: 5   
+gurgen_3;TEST #614 FAIL;dices;tested dices = [1, 3, 4, 5, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 5 3 4 1    score: 15   
+gurgen_3;TEST #629 FAIL;dices;tested dices = [1, 1, 5, 6, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 6 5 1 1    score: 25   
+gurgen_3;TEST #643 FAIL;dices;tested dices = [1, 3, 4, 6, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 4 1 6 3    score: 10   
+gurgen_3;TEST #655 FAIL;dices;tested dices = [2, 4, 4, 6, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 4 4 2 6    GURGEN!   
+gurgen_3;TEST #666 FAIL;dices;tested dices = [7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7    GURGEN!   
+gurgen_3;TEST #709 FAIL;dices;tested dices = [6, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 6    GURGEN!   
+gurgen_3;TEST #713 FAIL;dices;tested dices = [1, 5, 5, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 5 1 5    score: 20   
+gurgen_3;TEST #714 FAIL;dices;tested dices = [3, 4, 5, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 4 3 5    score: 5   
+gurgen_3;TEST #721 FAIL;dices;tested dices = [1, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 1    score: 10   
+gurgen_3;TEST #750 FAIL;dices;tested dices = [7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7    GURGEN!   
+gurgen_3;TEST #866 FAIL;dices;tested dices = [1, 3, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 1 3    score: 10   
+gurgen_3;TEST #916 FAIL;dices;tested dices = [2, 4, 6, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 4 6 2    GURGEN!   
+gurgen_3;TEST #970 FAIL;dices;tested dices = [7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7    GURGEN!   
+gurgen_3;TEST #985 FAIL;dices;tested dices = [2, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 2    GURGEN!   
+gurgen_3;TEST #1001 FAIL;dices;tested dices = [3, 6, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 6 3    GURGEN!   
+gurgen_3;TEST #1067 FAIL;dices;tested dices = [3, 4, 4, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 4 4 3    GURGEN!   
+gurgen_3;TEST #1092 FAIL;dices;tested dices = [7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7    GURGEN!   
+gurgen_3;TEST #1101 FAIL;dices;tested dices = [7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7    GURGEN!   
+gurgen_3;TEST #1279 FAIL;dices;tested dices = [3, 4, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 4 3    GURGEN!   
+gurgen_3;TEST #1280 FAIL;dices;tested dices = [5, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 5    score: 5   
+gurgen_3;TEST #1300 FAIL;dices;tested dices = [1, 2, 5, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 2 5 1    score: 15   
+gurgen_3;TEST #1327 FAIL;dices;tested dices = [1, 2, 2, 6, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 6 2 1 2    score: 10   
+gurgen_3;TEST #1348 FAIL;dices;tested dices = [7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7    GURGEN!   
+gurgen_3;TEST #1382 FAIL;dices;tested dices = [1, 3, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 3 1    score: 10   
+gurgen_3;TEST #1395 FAIL;dices;tested dices = [1, 5, 6, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 1 5 6    score: 15   
+gurgen_3;TEST #1575 FAIL;dices;tested dices = [3, 3, 6, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 3 6 3    GURGEN!   
+gurgen_3;TEST #1586 FAIL;dices;tested dices = [3, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 3    GURGEN!   
+gurgen_3;TEST #1612 FAIL;dices;tested dices = [1, 3, 3, 5, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 5 1 3 3    score: 15   
+gurgen_3;TEST #1682 FAIL;dices;tested dices = [2, 2, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 2 2    GURGEN!   
+gurgen_3;TEST #1688 FAIL;dices;tested dices = [7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7    GURGEN!   
+gurgen_3;TEST #1715 FAIL;dices;tested dices = [1, 4, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 1 4    score: 10   
+gurgen_3;TEST #1730 FAIL;dices;tested dices = [4, 5, 6, 6, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 6 5 4 6    score: 5   
+gurgen_3;TEST #1735 FAIL;dices;tested dices = [3, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 3    GURGEN!   
+gurgen_3;TEST #1762 FAIL;dices;tested dices = [1, 5, 5, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 5 5 1    score: 20   
+gurgen_3;TEST #1775 FAIL;dices;tested dices = [1, 3, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 3 1    score: 10   
+gurgen_3;TEST #1855 FAIL;dices;tested dices = [1, 3, 4, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 4 1 3    score: 10   
+gurgen_3;TEST #1933 FAIL;dices;tested dices = [6, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 6    GURGEN!   
+gurgen_3;TEST #1947 FAIL;dices;tested dices = [5, 6, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 5 6    score: 5   
+gurgen_3;TEST #2007 FAIL;dices;tested dices = [2, 3, 3, 5, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 2 3 5 3    score: 5   
+gurgen_3;TEST #2041 FAIL;dices;tested dices = [2, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 2    GURGEN!   
+gurgen_3;TEST #2046 FAIL;dices;tested dices = [1, 2, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 1 2    score: 10   
+gurgen_3;TEST #2050 FAIL;dices;tested dices = [6, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 6    GURGEN!   
+gurgen_3;TEST #2073 FAIL;dices;tested dices = [3, 4, 4, 5, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 4 4 5 3    score: 5   
+gurgen_3;TEST #2102 FAIL;dices;tested dices = [3, 3, 5, 6, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 3 5 3 6    score: 5   
+gurgen_3;TEST #2165 FAIL;dices;tested dices = [7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7    GURGEN!   
+gurgen_3;TEST #2173 FAIL;dices;tested dices = [1, 2, 3, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 2 3 1    score: 10   
+gurgen_3;TEST #2213 FAIL;dices;tested dices = [1, 1, 3, 5, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 1 3 5 1    score: 25   
+gurgen_3;TEST #2258 FAIL;dices;tested dices = [1, 2, 3, 4, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 1 4 3 2    score: 10   
+gurgen_3;TEST #2320 FAIL;dices;tested dices = [1, 2, 5, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 2 1 5    score: 15   
+gurgen_3;TEST #2394 FAIL;dices;tested dices = [3, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 3    GURGEN!   
+gurgen_3;TEST #2458 FAIL;dices;tested dices = [2, 3, 4, 5, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 2 5 3 4    score: 5   
+gurgen_3;TEST #2489 FAIL;dices;tested dices = [4, 5, 6, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 4 6 5    score: 5   
+gurgen_3;TEST #2497 FAIL;dices;tested dices = [1, 2, 2, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 1 2 2    score: 10   
+gurgen_3;TEST #2514 FAIL;dices;tested dices = [5, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 5    score: 5   
+gurgen_3;TEST #2570 FAIL;dices;tested dices = [2, 3, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 3 2    GURGEN!   
+gurgen_3;TEST #2602 FAIL;dices;tested dices = [3, 4, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 3 4    GURGEN!   
+gurgen_3;TEST #2623 FAIL;dices;tested dices = [4, 4, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 4 4    GURGEN!   
+gurgen_3;TEST #2640 FAIL;dices;tested dices = [1, 4, 6, 6, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 6 6 1 4    score: 10   
+gurgen_3;TEST #2698 FAIL;dices;tested dices = [4, 4, 4, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 4 4 4    GURGEN!   
+gurgen_3;TEST #2748 FAIL;dices;tested dices = [2, 4, 4, 5, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 4 2 4 5    score: 5   
+gurgen_3;TEST #2854 FAIL;dices;tested dices = [2, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 2    GURGEN!   
+gurgen_3;TEST #2911 FAIL;dices;tested dices = [2, 3, 5, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 3 5 2    score: 5   
+gurgen_3;TEST #2933 FAIL;dices;tested dices = [1, 1, 5, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 5 1 1    score: 25   
+gurgen_3;TEST #3005 FAIL;dices;tested dices = [5, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 5    score: 5   
+gurgen_3;TEST #3020 FAIL;dices;tested dices = [3, 6, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 3 6    GURGEN!   
+gurgen_3;TEST #3052 FAIL;dices;tested dices = [1, 1, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 1 1    score: 20   
+gurgen_3;TEST #3093 FAIL;dices;tested dices = [1, 6, 6, 6, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 1 6 6 6    score: 10   
+gurgen_3;TEST #3126 FAIL;dices;tested dices = [1, 1, 2, 2, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 2 1 2 1    score: 20   
+gurgen_3;TEST #3251 FAIL;dices;tested dices = [3, 5, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 5 3    score: 5   
+gurgen_3;TEST #3260 FAIL;dices;tested dices = [2, 2, 3, 5, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 2 3 2 5    score: 5   
+gurgen_3;TEST #3301 FAIL;dices;tested dices = [5, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 5    score: 5   
+gurgen_3;TEST #3310 FAIL;dices;tested dices = [5, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 5    score: 5   
+gurgen_3;TEST #3319 FAIL;dices;tested dices = [1, 3, 3, 6, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 1 3 3 6    score: 10   
+gurgen_3;TEST #3423 FAIL;dices;tested dices = [2, 2, 4, 4, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 2 4 2 4    GURGEN!   
+gurgen_3;TEST #3435 FAIL;dices;tested dices = [3, 5, 6, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 3 6 5    score: 5   
+gurgen_3;TEST #3458 FAIL;dices;tested dices = [7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7    GURGEN!   
+gurgen_3;TEST #3471 FAIL;dices;tested dices = [1, 3, 5, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 1 5 3    score: 15   
+gurgen_3;TEST #3497 FAIL;dices;tested dices = [2, 5, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 5 2    score: 5   
+gurgen_3;TEST #3542 FAIL;dices;tested dices = [3, 5, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 5 3    score: 5   
+gurgen_3;TEST #3547 FAIL;dices;tested dices = [2, 6, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 6 2    GURGEN!   
+gurgen_3;TEST #3552 FAIL;dices;tested dices = [7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7    GURGEN!   
+gurgen_3;TEST #3566 FAIL;dices;tested dices = [7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7    GURGEN!   
+gurgen_3;TEST #3605 FAIL;dices;tested dices = [4, 6, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 6 4    GURGEN!   
+gurgen_3;TEST #3621 FAIL;dices;tested dices = [7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7    GURGEN!   
+gurgen_3;TEST #3717 FAIL;dices;tested dices = [2, 4, 5, 6, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 4 2 5 6    score: 5   
+gurgen_3;TEST #3732 FAIL;dices;tested dices = [2, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 2    GURGEN!   
+gurgen_3;TEST #3761 FAIL;dices;tested dices = [1, 6, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 1 6    score: 10   
+gurgen_3;TEST #3802 FAIL;dices;tested dices = [7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7    GURGEN!   
+gurgen_3;TEST #3821 FAIL;dices;tested dices = [7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7    GURGEN!   
+gurgen_3;TEST #3854 FAIL;dices;tested dices = [3, 3, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 3 3    GURGEN!   
+gurgen_3;TEST #3879 FAIL;dices;tested dices = [4, 5, 6, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 5 6 4    score: 5   
+gurgen_3;TEST #3902 FAIL;dices;tested dices = [5, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 5    score: 5   
+gurgen_3;TEST #3903 FAIL;dices;tested dices = [1, 1, 2, 4, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 1 2 1 4    score: 20   
+gurgen_3;TEST #3904 FAIL;dices;tested dices = [2, 2, 4, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 4 2 2    GURGEN!   
+gurgen_3;TEST #3943 FAIL;dices;tested dices = [6, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 6    GURGEN!   
+gurgen_3;TEST #4007 FAIL;dices;tested dices = [5, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 5    score: 5   
+gurgen_3;TEST #4039 FAIL;dices;tested dices = [1, 1, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 1 1    score: 20   
+gurgen_3;TEST #4045 FAIL;dices;tested dices = [7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7    GURGEN!   
+gurgen_3;TEST #4069 FAIL;dices;tested dices = [2, 3, 5, 6, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 2 5 6 3    score: 5   
+gurgen_3;TEST #4100 FAIL;dices;tested dices = [7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7    GURGEN!   
+gurgen_3;TEST #4175 FAIL;dices;tested dices = [1, 3, 3, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 1 3 3    score: 10   
+gurgen_3;TEST #4202 FAIL;dices;tested dices = [2, 3, 4, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 2 4 3    GURGEN!   
+gurgen_3;TEST #4237 FAIL;dices;tested dices = [1, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 1    score: 10   
+gurgen_3;TEST #4257 FAIL;dices;tested dices = [1, 6, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 1 6    score: 10   
+gurgen_3;TEST #4274 FAIL;dices;tested dices = [4, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 4    GURGEN!   
+gurgen_3;TEST #4329 FAIL;dices;tested dices = [3, 6, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 3 6    GURGEN!   
+gurgen_3;TEST #4378 FAIL;dices;tested dices = [3, 3, 5, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 5 3 3    score: 5   
+gurgen_3;TEST #4446 FAIL;dices;tested dices = [5, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 5    score: 5   
+gurgen_3;TEST #4482 FAIL;dices;tested dices = [1, 1, 2, 3, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 1 1 2 3    score: 20   
+gurgen_3;TEST #4516 FAIL;dices;tested dices = [2, 6, 6, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 6 6 2    GURGEN!   
+gurgen_3;TEST #4529 FAIL;dices;tested dices = [7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7    GURGEN!   
+gurgen_3;TEST #4591 FAIL;dices;tested dices = [6, 6, 6, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 6 6 6    GURGEN!   
+gurgen_3;TEST #4593 FAIL;dices;tested dices = [6, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 6    GURGEN!   
+gurgen_3;TEST #4594 FAIL;dices;tested dices = [7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7    GURGEN!   
+gurgen_3;TEST #4730 FAIL;dices;tested dices = [2, 2, 3, 5, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 5 3 2 2    score: 5   
+gurgen_3;TEST #4842 FAIL;dices;tested dices = [5, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 5    score: 5   
+gurgen_3;TEST #4845 FAIL;dices;tested dices = [1, 1, 1, 4, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 1 1 1 4    score: 30   
+gurgen_3;TEST #4864 FAIL;dices;tested dices = [1, 4, 5, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 4 1 5    score: 15   
+gurgen_3;TEST #4872 FAIL;dices;tested dices = [2, 3, 3, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 2 3 3    GURGEN!   
+gurgen_3;TEST #4908 FAIL;dices;tested dices = [1, 2, 3, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 3 2 1    score: 10   
+gurgen_3;TEST #4915 FAIL;dices;tested dices = [4, 4, 6, 6, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 4 4 6 6    GURGEN!   
+gurgen_3;TEST #4920 FAIL;dices;tested dices = [1, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 1    score: 10   
+gurgen_3;TEST #4953 FAIL;dices;tested dices = [1, 3, 5, 6, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 1 3 6 5    score: 15   
+gurgen_3;TEST #4972 FAIL;dices;tested dices = [7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7    GURGEN!   
+gurgen_3;TEST #4979 FAIL;dices;tested dices = [1, 4, 6, 6, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 6 1 4 6    score: 10   
+gurgen_3;TEST #5005 FAIL;dices;tested dices = [1, 4, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 1 4    score: 10   
+gurgen_3;TEST #5028 FAIL;dices;tested dices = [3, 3, 4, 5, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 3 3 5 4    score: 5   
+gurgen_3;TEST #5038 FAIL;dices;tested dices = [7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7    GURGEN!   
+gurgen_3;TEST #5042 FAIL;dices;tested dices = [3, 3, 3, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 3 3 3    GURGEN!   
+gurgen_3;TEST #5092 FAIL;dices;tested dices = [4, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 4    GURGEN!   
+gurgen_3;TEST #5103 FAIL;dices;tested dices = [7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7    GURGEN!   
+gurgen_3;TEST #5144 FAIL;dices;tested dices = [1, 4, 4, 5, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 1 4 4 5    score: 15   
+gurgen_3;TEST #5147 FAIL;dices;tested dices = [7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7    GURGEN!   
+gurgen_3;TEST #5220 FAIL;dices;tested dices = [1, 3, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 1 3    score: 10   
+gurgen_3;TEST #5250 FAIL;dices;tested dices = [2, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 2    GURGEN!   
+gurgen_3;TEST #5262 FAIL;dices;tested dices = [7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7    GURGEN!   
+gurgen_3;TEST #5336 FAIL;dices;tested dices = [1, 3, 3, 4, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 3 1 4 3    score: 10   
+gurgen_3;TEST #5476 FAIL;dices;tested dices = [7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7    GURGEN!   
+gurgen_3;TEST #5487 FAIL;dices;tested dices = [4, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 4    GURGEN!   
+gurgen_3;TEST #5523 FAIL;dices;tested dices = [1, 1, 3, 4, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 1 1 3 4    score: 20   
+gurgen_3;TEST #5556 FAIL;dices;tested dices = [2, 2, 3, 4, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 3 2 2 4    GURGEN!   
+gurgen_3;TEST #5583 FAIL;dices;tested dices = [1, 1, 1, 5, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 1 1 5 1    score: 35   
+gurgen_3;TEST #5596 FAIL;dices;tested dices = [1, 6, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 1 6    score: 10   
+gurgen_3;TEST #5606 FAIL;dices;tested dices = [6, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 6    GURGEN!   
+gurgen_3;TEST #5623 FAIL;dices;tested dices = [3, 5, 6, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 3 6 5    score: 5   
+gurgen_3;TEST #5667 FAIL;dices;tested dices = [7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7    GURGEN!   
+gurgen_3;TEST #5673 FAIL;dices;tested dices = [1, 1, 3, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 1 1 3    score: 20   
+gurgen_3;TEST #5681 FAIL;dices;tested dices = [7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7    GURGEN!   
+gurgen_3;TEST #5704 FAIL;dices;tested dices = [7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7    GURGEN!   
+gurgen_3;TEST #5716 FAIL;dices;tested dices = [3, 4, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 3 4    GURGEN!   
+gurgen_3;TEST #5726 FAIL;dices;tested dices = [7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7    GURGEN!   
+gurgen_3;TEST #5731 FAIL;dices;tested dices = [5, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 5    score: 5   
+gurgen_3;TEST #5751 FAIL;dices;tested dices = [1, 5, 5, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 5 1 5    score: 20   
+gurgen_3;TEST #5757 FAIL;dices;tested dices = [1, 1, 1, 2, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 2 1 1 1    score: 30   
+gurgen_3;TEST #5759 FAIL;dices;tested dices = [1, 1, 4, 6, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 1 4 6 1    score: 20   
+gurgen_3;TEST #5771 FAIL;dices;tested dices = [6, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 6    GURGEN!   
+gurgen_3;TEST #5775 FAIL;dices;tested dices = [2, 2, 3, 3, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 2 3 2 3    GURGEN!   
+gurgen_3;TEST #5822 FAIL;dices;tested dices = [6, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 6    GURGEN!   
+gurgen_3;TEST #5862 FAIL;dices;tested dices = [1, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 1    score: 10   
+gurgen_3;TEST #5894 FAIL;dices;tested dices = [3, 5, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 5 3    score: 5   
+gurgen_3;TEST #5906 FAIL;dices;tested dices = [2, 4, 5, 6, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 5 4 2 6    score: 5   
+gurgen_3;TEST #5919 FAIL;dices;tested dices = [7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7    GURGEN!   
+gurgen_3;TEST #5942 FAIL;dices;tested dices = [1, 1, 1, 2, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 2 1 1 1    score: 30   
+gurgen_3;TEST #5969 FAIL;dices;tested dices = [7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7    GURGEN!   
+gurgen_3;TEST #6017 FAIL;dices;tested dices = [7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7    GURGEN!   
+gurgen_3;TEST #6033 FAIL;dices;tested dices = [6, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 6    GURGEN!   
+gurgen_3;TEST #6046 FAIL;dices;tested dices = [1, 3, 5, 6, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 6 3 5 1    score: 15   
+gurgen_3;TEST #6059 FAIL;dices;tested dices = [7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7    GURGEN!   
+gurgen_3;TEST #6136 FAIL;dices;tested dices = [3, 5, 5, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 5 5 3    score: 10   
+gurgen_3;TEST #6183 FAIL;dices;tested dices = [1, 2, 4, 5, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 5 4 1 2    score: 15   
+gurgen_3;TEST #6195 FAIL;dices;tested dices = [1, 2, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 2 1    score: 10   
+gurgen_3;TEST #6199 FAIL;dices;tested dices = [1, 4, 5, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 4 1 5    score: 15   
+gurgen_3;TEST #6212 FAIL;dices;tested dices = [3, 6, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 3 6    GURGEN!   
+gurgen_3;TEST #6230 FAIL;dices;tested dices = [7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7    GURGEN!   
+gurgen_3;TEST #6233 FAIL;dices;tested dices = [6, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 6    GURGEN!   
+gurgen_3;TEST #6326 FAIL;dices;tested dices = [7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7    GURGEN!   
+gurgen_3;TEST #6369 FAIL;dices;tested dices = [4, 5, 6, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 5 4 6    score: 5   
+gurgen_3;TEST #6380 FAIL;dices;tested dices = [2, 5, 5, 6, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 5 2 6 5    score: 10   
+gurgen_3;TEST #6402 FAIL;dices;tested dices = [1, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 1    score: 10   
+gurgen_3;TEST #6418 FAIL;dices;tested dices = [1, 2, 3, 4, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 3 4 1 2    score: 10   
+gurgen_3;TEST #6420 FAIL;dices;tested dices = [4, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 4    GURGEN!   
+gurgen_3;TEST #6478 FAIL;dices;tested dices = [4, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 4    GURGEN!   
+gurgen_3;TEST #6484 FAIL;dices;tested dices = [1, 4, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 4 1    score: 10   
+gurgen_3;TEST #6532 FAIL;dices;tested dices = [6, 6, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 6 6    GURGEN!   
+gurgen_3;TEST #6548 FAIL;dices;tested dices = [1, 1, 2, 4, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 1 4 1 2    score: 20   
+gurgen_3;TEST #6561 FAIL;dices;tested dices = [7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7    GURGEN!   
+gurgen_3;TEST #6631 FAIL;dices;tested dices = [7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7    GURGEN!   
+gurgen_3;TEST #6649 FAIL;dices;tested dices = [4, 4, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 4 4    GURGEN!   
+gurgen_3;TEST #6672 FAIL;dices;tested dices = [2, 5, 6, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 6 5 2    score: 5   
+gurgen_3;TEST #6686 FAIL;dices;tested dices = [1, 1, 1, 5, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 5 1 1 1    score: 35   
+gurgen_3;TEST #6707 FAIL;dices;tested dices = [7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7    GURGEN!   
+gurgen_3;TEST #6726 FAIL;dices;tested dices = [1, 4, 5, 6, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 4 6 5 1    score: 15   
+gurgen_3;TEST #6741 FAIL;dices;tested dices = [6, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 6    GURGEN!   
+gurgen_3;TEST #6751 FAIL;dices;tested dices = [1, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 1    score: 10   
+gurgen_3;TEST #6793 FAIL;dices;tested dices = [1, 1, 4, 5, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 1 5 4 1    score: 25   
+gurgen_3;TEST #6823 FAIL;dices;tested dices = [4, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 4    GURGEN!   
+gurgen_3;TEST #6830 FAIL;dices;tested dices = [3, 3, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 3 3    GURGEN!   
+gurgen_3;TEST #6846 FAIL;dices;tested dices = [5, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 5    score: 5   
+gurgen_3;TEST #6854 FAIL;dices;tested dices = [3, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 3    GURGEN!   
+gurgen_3;TEST #6998 FAIL;dices;tested dices = [1, 2, 4, 4, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 2 1 4 4    score: 10   
+gurgen_3;TEST #7121 FAIL;dices;tested dices = [1, 1, 2, 5, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 1 2 5 1    score: 25   
+gurgen_3;TEST #7128 FAIL;dices;tested dices = [4, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 4    GURGEN!   
+gurgen_3;TEST #7132 FAIL;dices;tested dices = [7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7    GURGEN!   
+gurgen_3;TEST #7155 FAIL;dices;tested dices = [2, 3, 4, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 2 4 3    GURGEN!   
+gurgen_3;TEST #7198 FAIL;dices;tested dices = [1, 1, 5, 6, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 1 5 6 1    score: 25   
+gurgen_3;TEST #7209 FAIL;dices;tested dices = [3, 6, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 3 6    GURGEN!   
+gurgen_3;TEST #7234 FAIL;dices;tested dices = [2, 3, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 2 3    GURGEN!   
+gurgen_3;TEST #7273 FAIL;dices;tested dices = [4, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 4    GURGEN!   
+gurgen_3;TEST #7331 FAIL;dices;tested dices = [1, 2, 3, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 2 3 1    score: 10   
+gurgen_3;TEST #7384 FAIL;dices;tested dices = [7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7    GURGEN!   
+gurgen_3;TEST #7399 FAIL;dices;tested dices = [2, 2, 5, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 5 2 2    score: 5   
+gurgen_3;TEST #7443 FAIL;dices;tested dices = [7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7    GURGEN!   
+gurgen_3;TEST #7449 FAIL;dices;tested dices = [6, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 6    GURGEN!   
+gurgen_3;TEST #7460 FAIL;dices;tested dices = [1, 2, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 1 2    score: 10   
+gurgen_3;TEST #7490 FAIL;dices;tested dices = [1, 4, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 1 4    score: 10   
+gurgen_3;TEST #7495 FAIL;dices;tested dices = [1, 6, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 6 1    score: 10   
+gurgen_3;TEST #7628 FAIL;dices;tested dices = [2, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 2    GURGEN!   
+gurgen_3;TEST #7641 FAIL;dices;tested dices = [1, 1, 2, 3, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 2 1 3 1    score: 20   
+gurgen_3;TEST #7713 FAIL;dices;tested dices = [3, 6, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 3 6    GURGEN!   
+gurgen_3;TEST #7741 FAIL;dices;tested dices = [2, 3, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 3 2    GURGEN!   
+gurgen_3;TEST #7779 FAIL;dices;tested dices = [1, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 1    score: 10   
+gurgen_3;TEST #7799 FAIL;dices;tested dices = [3, 4, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 3 4    GURGEN!   
+gurgen_3;TEST #7814 FAIL;dices;tested dices = [7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7    GURGEN!   
+gurgen_3;TEST #7822 FAIL;dices;tested dices = [2, 5, 5, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 2 5 5    score: 10   
+gurgen_3;TEST #7832 FAIL;dices;tested dices = [2, 6, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 2 6    GURGEN!   
+gurgen_3;TEST #7847 FAIL;dices;tested dices = [2, 2, 3, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 3 2 2    GURGEN!   
+gurgen_3;TEST #7936 FAIL;dices;tested dices = [3, 5, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 5 3    score: 5   
+gurgen_3;TEST #7953 FAIL;dices;tested dices = [2, 3, 4, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 3 2 4    GURGEN!   
+gurgen_3;TEST #7990 FAIL;dices;tested dices = [1, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 1    score: 10   
+gurgen_3;TEST #8021 FAIL;dices;tested dices = [1, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 1    score: 10   
+gurgen_3;TEST #8038 FAIL;dices;tested dices = [7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7    GURGEN!   
+gurgen_3;TEST #8084 FAIL;dices;tested dices = [3, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 3    GURGEN!   
+gurgen_3;TEST #8131 FAIL;dices;tested dices = [5, 5, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 5 5    score: 10   
+gurgen_3;TEST #8190 FAIL;dices;tested dices = [2, 2, 4, 6, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 4 2 2 6    GURGEN!   
+gurgen_3;TEST #8214 FAIL;dices;tested dices = [7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7    GURGEN!   
+gurgen_3;TEST #8252 FAIL;dices;tested dices = [1, 2, 4, 4, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 4 1 2 4    score: 10   
+gurgen_3;TEST #8263 FAIL;dices;tested dices = [1, 2, 2, 6, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 6 2 1 2    score: 10   
+gurgen_3;TEST #8291 FAIL;dices;tested dices = [2, 2, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 2 2    GURGEN!   
+gurgen_3;TEST #8444 FAIL;dices;tested dices = [4, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 4    GURGEN!   
+gurgen_3;TEST #8450 FAIL;dices;tested dices = [2, 3, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 2 3    GURGEN!   
+gurgen_3;TEST #8488 FAIL;dices;tested dices = [7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7    GURGEN!   
+gurgen_3;TEST #8537 FAIL;dices;tested dices = [7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7    GURGEN!   
+gurgen_3;TEST #8588 FAIL;dices;tested dices = [1, 3, 3, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 3 1 3    score: 10   
+gurgen_3;TEST #8610 FAIL;dices;tested dices = [3, 4, 6, 6, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 3 4 6 6    GURGEN!   
+gurgen_3;TEST #8664 FAIL;dices;tested dices = [1, 4, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 4 1    score: 10   
+gurgen_3;TEST #8679 FAIL;dices;tested dices = [3, 3, 4, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 4 3 3    GURGEN!   
+gurgen_3;TEST #8684 FAIL;dices;tested dices = [7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7    GURGEN!   
+gurgen_3;TEST #8722 FAIL;dices;tested dices = [5, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 5    score: 5   
+gurgen_3;TEST #8725 FAIL;dices;tested dices = [7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7    GURGEN!   
+gurgen_3;TEST #8750 FAIL;dices;tested dices = [3, 4, 5, 5, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 5 5 4 3    score: 10   
+gurgen_3;TEST #8810 FAIL;dices;tested dices = [6, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 6    GURGEN!   
+gurgen_3;TEST #8817 FAIL;dices;tested dices = [7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7    GURGEN!   
+gurgen_3;TEST #8876 FAIL;dices;tested dices = [1, 5, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 5 1    score: 15   
+gurgen_3;TEST #8938 FAIL;dices;tested dices = [1, 2, 3, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 3 1 2    score: 10   
+gurgen_3;TEST #8940 FAIL;dices;tested dices = [2, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 2    GURGEN!   
+gurgen_3;TEST #8941 FAIL;dices;tested dices = [1, 3, 3, 6, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 3 3 6 1    score: 10   
+gurgen_3;TEST #9025 FAIL;dices;tested dices = [5, 6, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 6 5    score: 5   
+gurgen_3;TEST #9068 FAIL;dices;tested dices = [5, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 5    score: 5   
+gurgen_3;TEST #9083 FAIL;dices;tested dices = [2, 3, 5, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 3 2 5    score: 5   
+gurgen_3;TEST #9144 FAIL;dices;tested dices = [7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7    GURGEN!   
+gurgen_3;TEST #9162 FAIL;dices;tested dices = [7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7    GURGEN!   
+gurgen_3;TEST #9192 FAIL;dices;tested dices = [7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7    GURGEN!   
+gurgen_3;TEST #9220 FAIL;dices;tested dices = [1, 6, 6, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 1 6 6    score: 10   
+gurgen_3;TEST #9237 FAIL;dices;tested dices = [1, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 1    score: 10   
+gurgen_3;TEST #9276 FAIL;dices;tested dices = [7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7    GURGEN!   
+gurgen_3;TEST #9282 FAIL;dices;tested dices = [7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7    GURGEN!   
+gurgen_3;TEST #9283 FAIL;dices;tested dices = [7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7    GURGEN!   
+gurgen_3;TEST #9327 FAIL;dices;tested dices = [1, 2, 5, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 1 2 5    score: 15   
+gurgen_3;TEST #9364 FAIL;dices;tested dices = [5, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 5    score: 5   
+gurgen_3;TEST #9396 FAIL;dices;tested dices = [7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7    GURGEN!   
+gurgen_3;TEST #9433 FAIL;dices;tested dices = [3, 5, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 5 3    score: 5   
+gurgen_3;TEST #9445 FAIL;dices;tested dices = [1, 3, 4, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 3 4 1    score: 10   
+gurgen_3;TEST #9449 FAIL;dices;tested dices = [7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7    GURGEN!   
+gurgen_3;TEST #9511 FAIL;dices;tested dices = [7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7    GURGEN!   
+gurgen_3;TEST #9521 FAIL;dices;tested dices = [3, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 3    GURGEN!   
+gurgen_3;TEST #9533 FAIL;dices;tested dices = [1, 1, 1, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 1 1 1    score: 30   
+gurgen_3;TEST #9540 FAIL;dices;tested dices = [2, 6, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 6 2    GURGEN!   
+gurgen_3;TEST #9564 FAIL;dices;tested dices = [1, 2, 3, 4, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 1 4 2 3    score: 10   
+gurgen_3;TEST #9597 FAIL;dices;tested dices = [4, 6, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 4 6    GURGEN!   
+gurgen_3;TEST #9616 FAIL;dices;tested dices = [1, 3, 4, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 3 1 4    score: 10   
+gurgen_3;TEST #9645 FAIL;dices;tested dices = [7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7    GURGEN!   
+gurgen_3;TEST #9651 FAIL;dices;tested dices = [2, 3, 4, 5, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 5 3 2 4    score: 5   
+gurgen_3;TEST #9702 FAIL;dices;tested dices = [6, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 6    GURGEN!   
+gurgen_3;TEST #9733 FAIL;dices;tested dices = [2, 2, 4, 5, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 2 2 5 4    score: 5   
+gurgen_3;TEST #9758 FAIL;dices;tested dices = [7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7    GURGEN!   
+gurgen_3;TEST #9798 FAIL;dices;tested dices = [1, 6, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 1 6    score: 10   
+gurgen_3;TEST #9871 FAIL;dices;tested dices = [1, 6, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 6 1    score: 10   
+gurgen_3;TEST #9904 FAIL;dices;tested dices = [5, 5, 7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7 5 5    score: 10   
+gurgen_3;TEST #9948 FAIL;dices;tested dices = [7];invalid dice : 7 instead of [1 or 2 or 3 or 4 or 5 or 6];STDOUT=dices: 7    GURGEN!   
